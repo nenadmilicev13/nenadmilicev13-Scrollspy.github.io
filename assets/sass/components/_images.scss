@@ -1,0 +1,26 @@
+.images {
+    position: relative;
+}
+
+.nav {
+    position: fixed;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .nav-item {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: $white;
+    margin: 10px 0;
+    transition: 350ms ease;
+    cursor: pointer;
+    z-index: 1;
+    
+    &.is-active,
+    &:hover {
+      background-color: $red;
+    }
+  }

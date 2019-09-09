@@ -1,0 +1,47 @@
+/*--------------------------------------------------------------
+## Print
+--------------------------------------------------------------*/
+@media print {
+	body {
+		background: #fff;
+		color: #000;
+		margin: 10px 0;
+		padding: 0;
+		text-align: left;
+	}
+	a:link, a:visited {
+		background: #fff;
+		color: #000;
+		text-decoration: underline;
+	}
+	a:not([href="javascript:;"])::after {
+		content: " [" attr(href) "] ";
+	}
+	h1, h2, h3, h4, h5, h6, span {
+		background: none;
+		color: #000 !important;
+	}
+
+	// add elements that are going to be hidden
+	.temp,
+	.site-header,
+	.site-footer,
+	.banner,
+	.entry-footer {
+		display: none;
+	}
+
+	/*--------------------------------------------------------------
+	## Content Split
+	--------------------------------------------------------------*/
+	.content-split {
+		flex-direction: column;
+		padding-top: 0;
+		padding-bottom: 0;
+		padding-left: 0;
+	}
+
+	.content-split-media-wide {
+		max-width: 100%;
+	}
+}

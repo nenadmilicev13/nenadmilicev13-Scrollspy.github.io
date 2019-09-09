@@ -1,0 +1,21 @@
+/*--------------------------------------------------------------
+## Buttons
+--------------------------------------------------------------*/
+.btn {
+    display: inline-block;
+    padding: 15px 36px;
+    transition: $dur $ease;
+    font-size: 13px;
+    text-align: center;
+    text-transform: uppercase;
+
+    &:active,
+    &:focus {
+        outline: none;
+    }
+
+    @include media-breakpoint-down(md) {
+        padding: 7px 15px;
+        font-size: 11px;
+	}
+}

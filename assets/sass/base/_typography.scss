@@ -1,0 +1,35 @@
+/*--------------------------------------------------------------
+## Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: $dark;
+	font-family: $font-main;
+	font-size: 14px;
+	line-height: 1.6;
+}
+
+blockquote {
+	margin: 0 25px;
+}
+
+pre {
+	max-width: 100%;
+	padding: 1.6em;
+	overflow: auto;
+	background: #bebebe;
+}
+
+// Icon font
+[class*='font-'] {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	color: $black;
+	font-size: 30px;
+	line-height: 1;
+}
